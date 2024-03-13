@@ -1,8 +1,11 @@
 /******************************************************************************
 
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
+6. Sabendo que as faixas etárias para votação são: 18 a 70 anos voto obrigatório; 16, 17 e acima de 70 anos voto facultativo; outras idades (ou seja, menor que 16 anos) não pode votar, crie um programa que processa essa verificação. Exemplos de execução:
+
+	Idade: 20			Idade: 17			Idade: 12
+	Voto obrigatório		Voto facultativo		Não pode votar
+
+
 
 *******************************************************************************/
 

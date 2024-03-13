@@ -1,8 +1,10 @@
 /******************************************************************************
 
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
+5. Você vai fazer um programa para classificar os competidores segundo as suas posições. Foram criadas 5 classes: Top 5 (1-5), Top 10 (6-10), Top 20 (11-20), Top 30 (21-30) e Top 100 (outras posições). Faça um programa que peça a posição do competidor e indique a classe do mesmo. Exemplos de execução:
+	Posição: 12		Posição: 5		Posição: 34
+	Top 20		Top 5			Top 100
+
+
 
 *******************************************************************************/
 
