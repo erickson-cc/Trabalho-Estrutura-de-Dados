@@ -29,26 +29,93 @@ D: 0 pontos
 int main()
 {
     /**PONTOS**/
-    int A_pts;
-    int B_pts;
-    int C_pts;
-    int D_pts;
-    
+    int A_pts=0;
+    int B_pts=0;
+    int C_pts=0;
+    int D_pts=0;
     char time_x;// Time X que vai disputar contra o time Y
     char time_y;//
     
-    while(1=1/*time_x!= 'A' && time_x!= 'B' && time_x!= 'C' && time_x!= 'D'*/){
+    int gols_x=0;
+    int gols_y=0;
+    for(;;){
+        //resetando dentro do laço
+        time_x=' ';
+        time_y=' ';
+        gols_x=0;
+        gols_y=0;
+        
+        
         printf("Informe o nome do Primeiro Time: ");
         scanf("%c",&time_x);
-        if(time_x == 'A'){
-            
-        }
-        printf("Informe o Número de Gols do Primeiro time: ");
-        scanf
-        
+        if(time_x!= 'A' && time_x!= 'B' && time_x!= 'C' && time_x!= 'D'){
+            //RESULTADOS
+            printf("Pontuação Total:\n A: %d pontos\nB: %d pontos\nC: %d pontos\nD: %d pontos",A_pts,B_pts,C_pts,D_pts);
+            return 0;
+            }
+        printf("Informe o número de gols do Primeiro Time: ");
+        scanf("%d",&gols_x);
         printf("Informe o nome do Segundo Time: ");
         scanf("%c",&time_y);
-    }
+        printf("Informe o número de gols do Segundo Time: ");
+        scanf("%d",&gols_y);
+            
+            if(gols_x>gols_y){
+                if(time_x=='A'){
+                    A_pts=A_pts + 3;
+                }
+                if(time_x='B'){
+                    B_pts=B_pts + 3;
+                }
+                if(time_x='C'){
+                    C_pts=C_pts + 3;
+                }
+                if(time_x='D'){
+                    D_pts=D_pts + 3;
+                }
+                }
+            if(gols_y>gols_x){
+                if(time_y='A'){
+                    A_pts=A_pts + 3;
+                }
+                if(time_y='B'){
+                    B_pts=B_pts + 3;
+                }
+                if(time_y='C'){
+                    C_pts=C_pts + 3;
+                }
+                if(time_y='D'){
+                    D_pts=D_pts + 3;
+                }
+            }
+            if(gols_x=gols_y){
+                if(time_x='A'){
+                    A_pts++;
+                }
+                if(time_x='B'){
+                    B_pts++;
+                }
+                if(time_x='C'){
+                    C_pts++;
+                }
+                if(time_x='D'){
+                    D_pts++;
+                }
+                if(time_y='A'){
+                    A_pts++;
+                }
+                if(time_y='B'){
+                    B_pts++;
+                }
+                if(time_y='C'){
+                    C_pts++;
+                }
+                if(time_y='D'){
+                    D_pts++;
+                }
+            }
+
+            }
     
     return 0;
 }
