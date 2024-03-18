@@ -10,15 +10,16 @@ eração desejada for igual à @.
 
 int main()
 {
-    char opp;
-    double num1;
-    double num2;
-    double res;
+    char opp; //operação
+    double num1;//número 1
+    double num2;//número 2
+    double res;// resposta
     
     printf("Informe a operação desejada: \'+, -, / ou *\':\n");
     printf("Digite \'@\' para encerrar a calculadora\n");
     scanf("%c", &opp);
-    if(opp=='@'){
+
+    if(opp=='@'){//encerrar o código
         return 0;
     }
     printf("Informe o operando 1: ");
@@ -39,5 +40,6 @@ int main()
         res = num1*num2;
     }
     printf("%.2f",res);
+    
     return 0;
 }

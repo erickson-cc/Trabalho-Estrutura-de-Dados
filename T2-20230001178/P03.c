@@ -10,9 +10,9 @@ será 21, ou seja, 1 + 2 + 3 + 4 + 5 + 6.
 
 int main()
 {
-    int num;
-    int i;
-    int res;
+    int num;//número informado
+    int i;//usado no loop
+    int res;//resposta
     
     printf("Informe o número: ");    
     scanf("%d", &num);
@@ -21,7 +21,7 @@ int main()
     
     for(i=1;i<=num;i++){
         res=res+i;
-        if(i==num){printf("%d=%d", i,res);}
+        if(i==num){printf("%d=%d", i,res);}//final do loop
         else{printf("%d+", i);}
     }
     

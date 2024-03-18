@@ -18,15 +18,15 @@ Média filhos: 2.0
 
 int main()
 {
-    float sal, sal_sum=0,sal_med;
-    float fil, fil_sum=0, fil_med; 
-    int count=0;
+    float sal, sal_sum=0,sal_med; //Salário Atual//Soma de Salários//Média de Salários//
+    float fil, fil_sum=0, fil_med; //Filhos Atual//Soma de Filhos//Média de Filhos//
+    int count=0;//Contador do laço
 
     
     while(sal>=0){
         printf("Salário: ");
         scanf("%f", &sal);
-        if(sal>=0){
+        if(sal>=0){//Colocando essa condicional para encerrar o laço após o scanf
             count++;
             sal_sum=sal_sum+sal;
             printf("Filhos: ");
@@ -34,6 +34,7 @@ int main()
             fil_sum=fil_sum+fil;
         }
     }
+    /* Calculando as Médias */
     sal_med = sal_sum/count;
     fil_med = fil_sum/count;
     

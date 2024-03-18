@@ -12,9 +12,9 @@ tro da multiplicação).
 
 int main()
 {
-    int num;
-    int i;
-    int res=1;
+    int num;//Número solicitado
+    int i;//variável do loop
+    int res=1;// num!
     
     printf("Informe o Número: ");
     scanf("%d", &num);

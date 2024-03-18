@@ -33,6 +33,7 @@ int main()
     int B_pts=0;
     int C_pts=0;
     int D_pts=0;
+    
     char time_x;// Time X que vai disputar contra o time Y
     char time_y;//
     

@@ -18,16 +18,16 @@ Metade 						4				Metade
 
 int main()
 {
-    int num;
+    int num;//número desejado
     int i;
     
     printf("Número: ");
     scanf("%d",&num);
-    for(i=1;i<=num/2;i++){
+    for(i=1;i<=num/2;i++){//primeira parte
         printf("%d\n",i);
     }
     printf("Metade\n");
-    for(i;i<=num;i++){
+    for(i;i<=num;i++){//segunda parte
         printf("%d\n",i);
     }
     return 0;

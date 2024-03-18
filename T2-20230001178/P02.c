@@ -11,20 +11,22 @@ mero. Nesse exemplo, o três seria somado quatro vezes: 3+3+3+3, resultando 12.
 
 int main()
 {
-    int val;
-    int mul;
-    int i;
-    int res;
+    int val;//value ou número 1
+    int mul;//multiplicador ou número 2
+    int i;//loop
+    int res;//result
     
     printf("Informe o primeiro número: ");    
     scanf("%d", &val);
     
     printf("Informe o segundo número: ");
     scanf("%d", &mul);
+
     res = 0;
+
     for(i=1;i<=mul;i++){
-        res=res+val;
-        if(i==mul){printf("%d=%d", val,res);}
+        res=res+val;// vai adicionando com o res que restou do laço anterior
+        if(i==mul){printf("%d=%d", val,res);}//fim do loop
         else{printf("%d+", val);}
     }
     

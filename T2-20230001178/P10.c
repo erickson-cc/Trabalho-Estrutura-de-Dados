@@ -23,23 +23,25 @@ int main()
 {
     int mat;
     float nota;//Tem que ser float para dar a média em float
-    int count=0;
+    int count=0;//contagem de alunos
     float med_aluno;
     float sum_aluno;
     float sum_turma=0;
     float med_turma;
-    int i=1;
+    int i=1;//i = nota individual
     
-    for(;;){
+    for(;;){//feito um laço infinito que é interrompido com uma condicional
         sum_aluno = 0;
         printf("Matrícula: ");
         scanf("%d",&mat);
+        /*****Última parte do Código*****/
         if(mat==0){
-            med_turma = sum_turma/(count*5);
-            printf("Média geral da turma: %f",med_turma);
+            med_turma = sum_turma/(count*5);//multiplicar por 5 que é a qt de notas
+            printf("Média geral da turma: %.1f",med_turma);
             return 0;
         }
-        for(i=1;i<=5;i++){
+        /*******************************/
+        for(i=1;i<=5;i++){//Pedir notas do aluno atual
             printf("Nota %d:", i);
             scanf("%f",&nota);
             sum_aluno = sum_aluno + nota;
